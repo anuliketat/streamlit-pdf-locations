@@ -21,7 +21,7 @@ def st_display_pdf(file):
 def get_page_info(file):
     pdfReader = PyPDF2.PdfFileReader(file)
     num_pages = pdfReader.numPages
-    st.write('Total Pages:', num_pages)
+    st.markdown(f'Total Pages:{num_pages}')
     #my_bar = st.progress(0)
     with st.spinner('Getting the list of locations...'):
         pin_profiles = ['50', '51', '52', '53']
