@@ -23,7 +23,9 @@ def get_page_info(file):
     num_pages = pdfReader.numPages
     st.markdown(f'Total Pages:{num_pages}')
     #my_bar = st.progress(0)
+    st.markdown('Starting script')
     with st.spinner('Getting the list of locations...'):
+        st.markdown('Running Script')
         pin_profiles = ['50', '51', '52', '53']
         tel, ap = [], []
         n_locs = 0
