@@ -13,7 +13,7 @@ check = False
 if check:
     pdf_file = st.file_uploader("Choose a .pdf file", type=["pdf"])
 else:
-    st.write('Will be back up soon!)
+    st.write('Will be back up soon!')
 def st_display_pdf(file):
 
     with open(pdfReader, 'rb') as f:
