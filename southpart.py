@@ -27,7 +27,7 @@ def get_page_info(file):
         pin_profiles = ['50', '51', '52', '53']
         tel, ap = [], []
         n_locs = 0
-        for page in stqdm(range(num_pages)):
+        for page in range(num_pages):
             st.markdown(page)
             pageObject = pdfReader.getPage(page) # read page
             page_text = pageObject.extractText() # extract text in page
