@@ -9,8 +9,9 @@ import warnings
 from stqdm import stqdm
 warnings.filterwarnings("ignore")
 
-
-pdf_file = st.file_uploader("Choose a .pdf file", type=["pdf"])
+check = False
+if check:
+    pdf_file = st.file_uploader("Choose a .pdf file", type=["pdf"])
 def st_display_pdf(file):
 
     with open(pdfReader, 'rb') as f:
@@ -76,22 +77,4 @@ if pdf_file is not None:
     col2.write(len(tel_list))
     col1.write(ap_final)
     col2.write(tel_final)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
