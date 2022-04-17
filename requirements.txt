@@ -11,4 +11,4 @@ pandas == 1.3.2
 stqdm == 0.0.4
 
 # southpart.py: 1
-streamlit == 1.5.1
+streamlit == 1.8.0
